@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+<head>
+	<title>Dating Website</title>
+	<meta name="author" content="Kavitha Nambiar">
+	<style>
+		fieldset {background: #AABBEE; border:10px; border-style: solid; border-color: #223344;
+  margin-bottom:10px; width:720px}
+		legend {font-size: 18px; font-weight: bold}
+		
+		label {width:180px; display:inline-block; text-align:right; vertical-align:top}
+		#contact {width:auto}
+		#gender {width:auto}
+		#leftrange {background: #91DF52}
+		#rightrange {background: #F0EF8B}
+		.rangeclass {text-align:center}
+		textarea {width:360px; height:50px}
+		body {font-family: 'Lato', sans-serif; font-size: 16px}
+		html{
+	background-image: url("http://wallpapercave.com/wp/7oVP0WS.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed
+}
+		
+		
+		
+	</style>
+</head>
+
+<body>
+
+	<h2>Please Enter Your Details For Our Dating Website!</h1>
+
+
+<form method="get" enctype="multipart/formdata" action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+	
+	<fieldset>
+		<legend>Your Face</legend>
+		<label for="fileToUpload">Your image:</label>
+		<input type="file" id="fileToUpload" name="fileToUpload" required> <br>
+		<label for="preview">Image preview:</label> 
+		<img id="preview">
+	
+	</fieldset> <br>
+	<fieldset>
+		<legend>Your General Details</legend>
+		<label for="name">Name:</label> 
+		<input type="text" id="name" name="name" required> <br>
+		<label for="gender">Gender:</label>
+		<input type="radio" name="gender" id="gender" value="Male" required>Male 
+		<input type="radio" name="gender" id="gender" value="Female" required>Female <br>
+		<label for="age">Your age:</label>
+		<input type="number" min="0" max="99" step="1" value="18" name="age" required> <br>
+		<label for="dob">Date of birth:</label> 
+		<input type="date" name="dob"> <br>
+		<label for="color">Favorite color:</label> 
+		<input type="color" name="color"> <br>
+		<label for="countries">Which country:</label>
+		<select name="countries" id="countries">
+							<option disabled selected></option>
+							<option value="USA">United States</option>
+							<option value="UK">United Kingdom</option>
+							<option value="IN">India</option>
+							<option value="JP">Japan</option>
+							<option value="FR">France</option>
+		</select>
+	</fieldset> <br>
+	<fieldset>
+		<legend>Your Indicators</legend>
+		<label for="height">Height:</label><label class="rangeclass" id="leftrange"> Short </label><input type="range" min="0" max="100" step="5" value="50" name="height" id="height"><label class="rangeclass" id="rightrange"> Tall </label>
+		<label for="salary">Salary:</label><label class="rangeclass" id="leftrange"> Poor </label><input type="range" min="0" max="100" step="5" value="50" name="salary" id="salary"><label class="rangeclass" id="rightrange"> Rich </label><br>
+	</fieldset> <br>
+	<fieldset>
+		<legend>Your Contact Information</legend>
+		<label for="email">Email:</label> 
+		<input type="email" id="email" name="email" required> <br>
+		<label for="mobile">Mobile:</label> 
+		<input type="tel" name="mobile"> <br>
+		<label for="address">Address:</label> 
+		<textarea rows="3" cols="25" name="address"></textarea> <br>
+		<label for="contact" id="genlabel">Method to contact you:</label> 
+		<input type="checkbox" name="contact" id="contact">Email 
+		<input type="checkbox" name="contact" id="contact">Whatsapp 
+		<input type="checkbox" name="contact"id="contact">In-app chat  
+	</fieldset> <br>
+	
+	<input type="submit" value="Submit">
+</form>
+
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+
+</body>
+</html>

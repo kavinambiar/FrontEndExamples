@@ -1,43 +1,51 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+
+#list2 { 
+	width: 500px;
+  	margin: 10px 
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+#list2 ol { 
+	font-style: italic;
+	font-family: 'Open Sans', sans-serif;
+	
+	font-size: 24px; 
+	color: #555;  
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+#list2 ol li { }
+
+#list2 ol li p { 
+		padding: 8px; 
+		font-style: normal; 
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px; 
+		color: black; 
+		border-left: 1px solid #999; 
 }
-a {
-    text-decoration: none;
-    color: #999;
+
+#list2 ol li p em { 
+			font-weight: bold;
+			font-size: 18px; 
+			display:block; 
 }
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
+
 p {
-    font-size: 1.5em;
+    font-size: 36px;
     line-height: 1.4em;
     color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+	font-family: 'Open Sans', sans-serif;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+#heading {
+	color: #333;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
 }
 
-ul.posts li {
-    list-style: none;
+html{
+	background-image: url("http://10steps.sg/wp-content/uploads//2012/11/White-christmas-light-background.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
 }

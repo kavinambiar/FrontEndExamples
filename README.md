@@ -1,3 +1,3 @@
 # kavinambiar.github.io
 
-Test site for hosting web page on GitHub
+This is a site which showcases my work in front-end web development. 
